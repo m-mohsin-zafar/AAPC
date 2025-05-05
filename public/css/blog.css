@@ -1,0 +1,205 @@
+#restaurants-title,
+#commercial-title,
+#hospitality-title {
+  display: none;
+}
+
+.width-full {
+  width: 100% !important;
+  border: none;
+  margin-bottom: 3% !important;
+  position: relative;
+  opacity: 0.5;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.width-full:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-top: 1px solid #888;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.width-full:last-of-type:before {
+  display: none;
+}
+
+.project-left {
+}
+
+.project-right {
+  display: flex;
+  justify-content: center;
+}
+
+.project-left,
+.project-right {
+  flex: 50%;
+}
+
+.width-full:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.project-left-pic {
+  width: 70%;
+  height: 15vmax;
+  background: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  margin: 5% 0 5% 15%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.project-right-pic {
+  width: 85%;
+  height: 15vmax;
+  background: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  /*float: right;*/
+  /*margin-bottom: 5%;*/
+  /*margin-right: 5%;*/
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.project-right-content {
+  margin: 5% 5% 5% 10%;
+  text-align: right;
+}
+
+.project-right-content h1 {
+  /*background: linear-gradient(127deg, rgba(176, 156, 59, .49) 0%, rgba(125, 105, 3, 0.28) 100%);*/
+  background: linear-gradient(127deg, rgba(64, 64, 64, 0.49) 0%, rgba(32, 32, 32, 0.28) 100%);
+  padding: 3%;
+  display: inline-block;
+  margin: 0 auto 5%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(15px);
+  font-size: 2vmax;
+}
+
+.project-right-content h5,
+.project-left-content h5 {
+  border-bottom: #ffdc32 2px solid;
+  display: inline-block;
+  margin-bottom: 3%;
+  font-size: 1vmax;
+}
+
+.project-right-content h4,
+.project-left-content h4 {
+  line-height: 2;
+  font-size: 1vmax;
+}
+
+.project-left-content {
+  margin: 0 0 5% 15%;
+  text-align: left;
+
+  /*border: blue 1px solid;*/
+}
+
+.project-left-content h2 {
+  /*background: linear-gradient(127deg, rgba(176, 156, 59, .49) 0%, rgba(125, 105, 3, 0.28) 100%);*/
+  background: linear-gradient(127deg, rgba(64, 64, 64, 0.49) 0%, rgba(32, 32, 32, 0.28) 100%);
+  padding: 3%;
+  display: inline-block;
+  margin: 0 auto 5%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(15px);
+  font-size: 1.75vmax;
+}
+
+.blog-overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /*border: 1px red solid;*/
+}
+
+.load-more-button {
+  border: white 1px solid;
+  background: #ffdc32;
+  color: black;
+  border-radius: 50px;
+
+  font-size: 1.5rem;
+
+  padding: 10px 30px;
+  margin: 30px 0;
+
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.load-more-button:hover {
+  /*color: black;*/
+  filter: brightness(75%);
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .width-full {
+    flex-direction: column;
+  }
+
+  .project-right div h4,
+  .project-right div h5,
+  .project-left div h4,
+  .project-left div h5 {
+    text-align: left;
+    float: left;
+    font-size: 1.5vmax;
+  }
+
+  .project-left div h1,
+  .project-right div h1 {
+    text-align: center;
+    float: left;
+    font-size: 2vmax;
+  }
+
+  .project-left-content,
+  .project-right-content {
+    margin: 5% 10%;
+  }
+
+  .project-right-content h1,
+  .project-left-content h1 {
+    font-size: 3.5vmax;
+    width: 100%;
+  }
+
+  .project-right-content h4,
+  .project-left-content h4 {
+    font-size: 2.25vmax;
+  }
+
+  .reverse {
+    flex-direction: column-reverse !important;
+  }
+
+  .project-left-pic,
+  .project-right-pic {
+    margin: 5% 10%;
+    float: left;
+    width: 60vw;
+  }
+
+  .load-more-button {
+    font-size: 1rem;
+  }
+}

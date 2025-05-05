@@ -1,0 +1,231 @@
+.carousel {
+    position: relative;
+    width: 100%;
+}
+
+.active {
+    all: revert;
+    border: none;
+}
+
+
+.carousel-item img {
+    object-fit: cover;
+}
+.carousel-item .carousel-item-img {
+    object-fit: cover;
+}
+
+.carousel-container {
+    margin-top: 15vh !important;
+}
+
+#carousel-thumbs {
+    padding: 0 50px;
+    margin: 5% auto 3%;
+    width: 80%;
+
+}
+
+#carousel-thumbs img {
+    border: 5px solid transparent;
+    cursor: pointer;
+    height: 80%;
+    width: 250px;
+    object-fit: cover;
+}
+#carousel-thumbs .carousel-thumbs-img {
+    border: 5px solid transparent;
+    cursor: pointer;
+    height: 80%;
+    width: 250px;
+    object-fit: cover;
+}
+
+#carousel-thumbs img:hover {
+    border-color: rgba(255, 255, 255, .3);
+}
+#carousel-thumbs .carousel-thumbs-img:hover {
+    border-color: rgba(255, 255, 255, .3);
+}
+
+#carousel-thumbs .selected img {
+    border-color: #fff;
+}
+#carousel-thumbs .selected .selected-img {
+    border-color: #fff;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+}
+
+/* .flex-container {
+    border: none;
+} */
+
+.about-text {
+    margin: 2% 5%;
+}
+
+.project-title {
+    position: absolute;
+    right: -5%;
+    top: 5%;
+    z-index: 2;
+    /*background: linear-gradient(127deg, rgba(176, 156, 59, .49) 0%, rgba(125, 105, 3, 0.28) 100%);*/
+    background: linear-gradient(127deg, rgba(64, 64, 64, 0.49) 0%, rgba(32, 32, 32, 0.28) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 1vmax;
+    font-size: 2.5rem;
+    width: auto !important;
+}
+
+.stats {
+    width: 80% !important;
+    background: #FFDC32;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 2;
+    margin: -3% auto auto !important;
+    align-items: center;
+    vertical-align: center;
+    /*background: linear-gradient(127deg, rgba(176, 156, 59, .49) 0%, rgba(125, 105, 3, 0.28) 100%);*/
+    background: linear-gradient(127deg, rgba(64, 64, 64, 0.49) 0%, rgba(32, 32, 32, 0.28) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.stats h3 {
+    font-size: .75vmax;
+    padding: 1vmax;
+    margin: .5vmax;
+    border-right: rgba(255, 255, 255, 0.5) 2px solid;
+    flex: 25%;
+    text-align: center;
+}
+
+.stats h3:last-child {
+    border-right: transparent;
+}
+
+.other-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+.other-project-single {
+    width: 25%;
+    height: 15vmax;
+    position: relative;
+
+}
+
+.other-project-single h3 {
+    font-size: 1.5vmax;
+    margin: 5%;
+    margin-left: -12%;
+    display: inline-block;
+    border-bottom: #FFDC32 2px solid;
+    -moz-transition: all .2s ease-in, visibility 0s, opacity 0.5s linear;
+    -o-transition: all .2s ease-in, visibility 0s, opacity 0.5s linear;
+    -webkit-transition: all .2s ease-in, visibility 0s, opacity 0.5s linear;
+    transition: all .2s ease-in, visibility 0s, opacity 0.5s linear;
+    opacity: 0;
+}
+
+.other-project-single:hover {
+    cursor: pointer;
+}
+
+.other-project-single:hover h3 {
+    opacity: 1;
+}
+
+.other-project-single:hover .project-button {
+    opacity: 1;
+}
+
+.project-button {
+    position: absolute !important;
+    bottom: 5% !important;
+    right: 5% !important;
+    scale: .7 !important;
+    -moz-transition: all .2s ease-in, visibility 0s, opacity 0.5s linear;
+    -o-transition: all .2s ease-in, visibility 0s, opacity 0.5s linear;
+    -webkit-transition: all .2s ease-in, visibility 0s, opacity 0.5s linear;
+    transition: all .2s ease-in, visibility 0s, opacity 0.5s linear;
+    opacity: 0;
+}
+
+@media all and (max-width: 767px) {
+    .carousel-container #carousel-thumbs img {
+        border-width: 3px;
+    }
+    .carousel-container #carousel-thumbs .carousel-thumbs-img {
+        border-width: 3px;
+    }
+
+    .carousel-container {
+        margin-top: 20vh !important;
+    }
+
+    .project-title {
+        left: 0;
+        top: -15%;
+        font-size: 3vmax;
+    }
+
+    .stats{
+        width: 100% !important;
+    }
+
+    .stats h3 {
+        font-size: 2vmax;
+        padding: 1.75vmax;
+    }
+
+    .other-projects {
+        flex-direction: column;
+    }
+
+    .other-project-single {
+        width: 90%;
+        margin: 8%;
+    }
+
+    .other-project-single h3 {
+        font-size: 2vmax;
+        margin: 5%;
+        margin-left: -5%;
+    }
+
+    .project-button h1 {
+        position: relative;
+        scale: .7;
+        margin-left: 10%;
+        margin-top: -15%;
+    }
+
+}
+
+@media all and (min-width: 576px) {
+    .carousel-container #carousel-thumbs {
+        position: absolute;
+    }
+}
+
+@media all and (max-width: 576px) {
+
+
+    #carousel-thumbs {
+        width: 100%;
+        margin-top: 5%;
+    }
+}

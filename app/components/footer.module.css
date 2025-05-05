@@ -1,0 +1,32 @@
+.socials {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+
+    /*border: 1px red solid;*/
+}
+
+.socials a img {
+    width: 30px;
+    margin: 0 10px;
+
+    /*margin: 5px;*/
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+
+}
+
+.socials a img:hover {
+    filter: brightness(75%);
+}
+
+@media (max-width: 950px) {
+    .socials {
+        margin-bottom: 10px;
+    }
+    .socials a img {
+        margin: 0 10px 0 0;
+    }
+}

@@ -1,0 +1,80 @@
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: white;
+}
+
+input {
+    margin: 1vmax 3vmax !important ;
+    background-color: transparent;
+    border: none;
+    border-bottom: #FFDC32 2px solid;
+}
+
+textarea {
+    margin: 1vmax 3vmax !important;
+    background-color: transparent;
+    border: none;
+    border-bottom: #FFDC32 2px solid;
+
+}
+
+input::file-selector-button {
+    font-weight: bold;
+    color: white;
+    background-color: #FFDC32;
+    padding: 0.5em;
+    border: thin solid #FFDC32;
+    margin: 1%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#contact-us-text, #apply-text{
+    font-size: 1.5vmax;
+}
+
+form{
+    display: flex; flex-direction: column;  width: 80%; margin: auto;
+}
+
+/*.button{*/
+/*    margin: 3vmax;*/
+/*}*/
+
+
+
+@media (max-width: 900px) {
+    .flex-item-left {
+        flex: 0%;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    .flex-item-right h1{
+        font-size: 2vmax;
+    }
+
+    input{
+        font-size: 2vmax;
+    }
+
+    .button{
+        scale: 1.25;
+        margin: 5vmax;
+    }
+
+    /*.button-text{*/
+    /*    margin: 0;*/
+    /*    scale: .8;*/
+    /*}*/
+
+    #contact-us-text, #apply-text{
+        font-size: 2vmax;
+    }
+}

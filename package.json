@@ -1,0 +1,33 @@
+{
+  "name": "aapc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "^14.2.15",
+    "@next/third-parties": "^14.2.5",
+    "aapc": "file:",
+    "axios": "^1.6.3",
+    "formik": "^2.4.5",
+    "html-react-parser": "^5.1.10",
+    "jquery": "^3.7.1",
+    "next": "^14.2.5",
+    "next-fonts": "^1.5.1",
+    "react": "^18.3.1",
+    "react-calendly": "^4.3.0",
+    "react-dom": "^18.3.1",
+    "react-parallax-tilt": "^1.7.227",
+    "sharp": "^0.33.4",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.2.5"
+  }
+}

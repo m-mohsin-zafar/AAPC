@@ -1,0 +1,69 @@
+.loading_screen {
+    background-color: #363838; /* Background color */
+    /*background-color: rgba(202, 174, 124, 0.2); !* 0.5 is 50% transparency *!*/
+    height: 150vw; /* Large enough to cover the viewport */
+    width: 150vw; /* Large enough to cover the viewport */
+    border-radius: 50%; /* Circular shape */
+
+    display: flex; /* Centering the content */
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+
+    position: fixed; /* Fixes the loading screen in place */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Move it back to the center */
+
+    z-index: 1000; /* Ensure it sits above other elements */
+    animation: grow .7s 1.5s ease-in-out forwards; /* Animation for shrinking */ /* first num is time of animation, second is delay */
+    transform-origin: top; /* Disappear towards */
+    /*transform-origin: bottom; !* Disappear towards *!*/
+    /*transform-origin: center; !* Disappear towards *!*/
+}
+
+.loading_screen img {
+    opacity: 0; /* Initially hidden */
+    /*opacity: 0.1;*/
+    animation: fadeIn .7s ease-in-out forwards, blinkEffect 0.35s ease-in-out 1s forwards; /* Combined animations */
+    max-width: 10%; /* Fit image within the loading screen */
+    max-height: 10%; /* Fit image within the loading screen */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start hidden */
+    }
+    to {
+        opacity: 1; /* Fade to fully visible */
+    }
+}
+@keyframes blinkEffect {
+    0%, 100% {
+        transform: scaleY(1); /* Normal size */
+    }
+    50% {
+        transform: scaleY(0.2); /* Compressed vertically */
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: translate(-50%, -50%) scale(1); /* Keep centered while shrinking */
+    }
+    to {
+        transform: translate(-50%, -50%) scale(0); /* Shrink to nothing while centered */
+    }
+}
+
+@media (max-width: 950px) {
+    .loading_screen {
+        width: 150vh; /* Large enough to cover the viewport */
+        height: 150vh; /* Large enough to cover the viewport */
+
+    }
+    .loading_screen img {
+        height: 20%;
+        width: 20%;
+    }
+}
