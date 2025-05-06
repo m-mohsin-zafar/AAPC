@@ -1,6 +1,6 @@
 "use client";
-import Navbar from "app/components/navbar";
-import Footer from "app/components/footer";
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
 import Topper from "./components/topper";
 import RecentPosts from "./components/recent-posts";
 import "../../../public/css/home.css";

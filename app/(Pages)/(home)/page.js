@@ -1,5 +1,5 @@
-import Navbar from "app/components/navbar";
-import Footer from "app/components/footer";
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
 import Topper from "./components/topper";
 import Process from "./components/process";
 import About from "./components/about";

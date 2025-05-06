@@ -1,5 +1,5 @@
-import Navbar from "app/components/navbar";
-import Footer from "app/components/footer";
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
 import ServicesWrapper from "./components/ServicesWrapper";
 import "../../../public/css/home.css";
 import "../../../public/css/services.css";
