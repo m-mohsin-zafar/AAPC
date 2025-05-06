@@ -11,6 +11,14 @@ module.exports = withFonts();
 
 module.exports = {
   ...nextConfig,
+  async rewrites() {
+    return [
+      {
+        source: '/sitemap.xml',
+        destination: '/api/cron', // your dynamic sitemap
+      },
+    ];
+  },
   webpack: (
     config,
     { buildId, dev, isServer, defaultLoaders, nextRuntime, webpack }
