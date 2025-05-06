@@ -1,5 +1,5 @@
-import Navbar from "../../components/navbar";
-import Footer from "../../components/footer";
+import Navbar from "../../../components/navbar";
+import Footer from "../../../components/footer";
 import Topper from "./components/topper";
 import Detail from "./components/detail";
 import { projects } from "./data";
